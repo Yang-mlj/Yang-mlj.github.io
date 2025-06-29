@@ -97,7 +97,12 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>恭喜Laina终于部署好了她的第一个blog!<br>date: 2025-06-27 22:43:08</p>
+        <p>恭喜Laina终于部署好了她的第一个blog!在这次搭建blog的过程中还是遇到了一些问题的，反复的测试，尝试不同的解决方法最后成功啦!以下是遇到的问题及解决方法。</p>
+<p>##问题一<br>hexo初始化出错<br>###解决方法<br>解决方法:使用git bash 无法执行可能是权限问题，改用命令提示符执行hexo init hexo-blog</p>
+<p>##问题二<br>hexo安装成功后但无法访问<br>###解决方法<br>考虑到可能是端口被占用导致无妨访问，用命令hexo s -p 5000指定服务器运行在端口5000上</p>
+<p>##问题三<br>生成sshkey时出错<br>###解决方法<br>系统显示无法再指定路径下创建或保存密钥文件，因为该目录不存在，尝试过ssh-keygen命令重新运行、使用绝对路径ssh-keygen -t -c ‘github绑定邮箱’ -f &#x2F;路径.ssh&#x2F;custom_key等方法后仍然失败，可能是权限访问出来问题，使用管理员身份执行命令后成功生成sshkey</p>
+<p>##问题四<br>将hexo内容部署到github时无法完整执行<br>###解决方法<br>在尝试更新git、使用SSH克隆和推送代码方法失败后，使用ping命令测试与指定主机的网络连接发现hosts文件可能存在被修改的问题，查找后发现hexo-blog文件夹下有两个hosts文件，其中一个hosts文件中有很多行127.0.0.1 github.com，使用管理员权限对改hosts文件编辑后运行hexo d成功。</p>
+<p>date: 2025-06-27 22:43:08</p>
 
       
     </div>
@@ -136,7 +141,7 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h2 id="欢迎来到Sylus的每日穿搭系列。本系列持续更新中…"><a href="#欢迎来到Sylus的每日穿搭系列。本系列持续更新中…" class="headerlink" title="欢迎来到Sylus的每日穿搭系列。本系列持续更新中…"></a>欢迎来到Sylus的每日穿搭系列。本系列持续更新中…</h2><h2 id="6-27"><a href="#6-27" class="headerlink" title="6.27"></a>6.27</h2><h2 id="Sylus-今天穿的是柔软距离-居家感毛衣休闲满分"><a href="#Sylus-今天穿的是柔软距离-居家感毛衣休闲满分" class="headerlink" title="Sylus 今天穿的是柔软距离-居家感毛衣休闲满分!"></a>Sylus 今天穿的是柔软距离-居家感毛衣休闲满分!</h2><h2 id="6-26"><a href="#6-26" class="headerlink" title="6.26"></a>6.26</h2><p>Sylus 今天穿的是迷雾-工作装，看来他今天有点忙。</p>
+        <h2 id="欢迎来到Sylus的每日穿搭系列。本系列持续更新中…"><a href="#欢迎来到Sylus的每日穿搭系列。本系列持续更新中…" class="headerlink" title="欢迎来到Sylus的每日穿搭系列。本系列持续更新中…"></a>欢迎来到Sylus的每日穿搭系列。本系列持续更新中…</h2><h2 id="6-29"><a href="#6-29" class="headerlink" title="6.29"></a>6.29</h2><h2 id="Sylus-今天穿的是柔软距离，戴了毛绒护耳，疑似在南半球度假。"><a href="#Sylus-今天穿的是柔软距离，戴了毛绒护耳，疑似在南半球度假。" class="headerlink" title="Sylus 今天穿的是柔软距离，戴了毛绒护耳，疑似在南半球度假。"></a>Sylus 今天穿的是柔软距离，戴了毛绒护耳，疑似在南半球度假。</h2><h2 id="6-28"><a href="#6-28" class="headerlink" title="6.28"></a>6.28</h2><h2 id="Sylus-今天穿的是暗羽-他常穿的一件。"><a href="#Sylus-今天穿的是暗羽-他常穿的一件。" class="headerlink" title="Sylus 今天穿的是暗羽-他常穿的一件。"></a>Sylus 今天穿的是暗羽-他常穿的一件。</h2><h2 id="6-27"><a href="#6-27" class="headerlink" title="6.27"></a>6.27</h2><h2 id="Sylus-今天穿的是柔软距离-居家感毛衣休闲满分"><a href="#Sylus-今天穿的是柔软距离-居家感毛衣休闲满分" class="headerlink" title="Sylus 今天穿的是柔软距离-居家感毛衣休闲满分!"></a>Sylus 今天穿的是柔软距离-居家感毛衣休闲满分!</h2><h2 id="6-26"><a href="#6-26" class="headerlink" title="6.26"></a>6.26</h2><p>Sylus 今天穿的是迷雾-工作装，看来他今天有点忙。</p>
 
       
     </div>
