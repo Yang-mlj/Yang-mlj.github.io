@@ -6,15 +6,15 @@
   
   <title>Laina&#39;s first blog | Laina&#39;s first blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="恭喜Laina终于部署好了她的第一个blog!在这次搭建blog的过程中还是遇到了一些问题的，反复的测试，尝试不同的解决方法最后成功啦!以下是遇到的问题及解决方法。 ##问题一hexo初始化出错###解决方法解决方法:使用git bash 无法执行可能是权限问题，改用命令提示符执行hexo init hexo-blog ##问题二hexo安装成功后但无法访问###解决方法考虑到可能是端口被占用导致">
+  <meta name="description" content="恭喜Laina终于部署好了她的第一个blog!在这次搭建blog的过程中还是遇到了一些问题的，反复的测试，尝试不同的解决方法最后成功啦!以下是遇到的问题及解决方法。 问题一hexo初始化出错解决方法使用git bash 无法执行可能是权限问题，改用命令提示符执行hexo init hexo-blog 问题二hexo安装成功后但无法访问解决方法考虑到可能是端口被占用导致无妨访问，用命令hexo s">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Laina&#39;s first blog">
 <meta property="og:url" content="http://yang-mlj.github.io/2025/06/27/Laina-s-first-blog/index.html">
 <meta property="og:site_name" content="Laina&#39;s first blog">
-<meta property="og:description" content="恭喜Laina终于部署好了她的第一个blog!在这次搭建blog的过程中还是遇到了一些问题的，反复的测试，尝试不同的解决方法最后成功啦!以下是遇到的问题及解决方法。 ##问题一hexo初始化出错###解决方法解决方法:使用git bash 无法执行可能是权限问题，改用命令提示符执行hexo init hexo-blog ##问题二hexo安装成功后但无法访问###解决方法考虑到可能是端口被占用导致">
+<meta property="og:description" content="恭喜Laina终于部署好了她的第一个blog!在这次搭建blog的过程中还是遇到了一些问题的，反复的测试，尝试不同的解决方法最后成功啦!以下是遇到的问题及解决方法。 问题一hexo初始化出错解决方法使用git bash 无法执行可能是权限问题，改用命令提示符执行hexo init hexo-blog 问题二hexo安装成功后但无法访问解决方法考虑到可能是端口被占用导致无妨访问，用命令hexo s">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-06-27T14:43:08.213Z">
-<meta property="article:modified_time" content="2025-06-29T08:15:46.105Z">
+<meta property="article:modified_time" content="2025-06-29T08:31:38.298Z">
 <meta property="article:author" content="Laina">
 <meta name="twitter:card" content="summary">
   
@@ -100,10 +100,10 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>恭喜Laina终于部署好了她的第一个blog!在这次搭建blog的过程中还是遇到了一些问题的，反复的测试，尝试不同的解决方法最后成功啦!以下是遇到的问题及解决方法。</p>
-<p>##问题一<br>hexo初始化出错<br>###解决方法<br>解决方法:使用git bash 无法执行可能是权限问题，改用命令提示符执行hexo init hexo-blog</p>
-<p>##问题二<br>hexo安装成功后但无法访问<br>###解决方法<br>考虑到可能是端口被占用导致无妨访问，用命令hexo s -p 5000指定服务器运行在端口5000上</p>
-<p>##问题三<br>生成sshkey时出错<br>###解决方法<br>系统显示无法再指定路径下创建或保存密钥文件，因为该目录不存在，尝试过ssh-keygen命令重新运行、使用绝对路径ssh-keygen -t -c ‘github绑定邮箱’ -f &#x2F;路径.ssh&#x2F;custom_key等方法后仍然失败，可能是权限访问出来问题，使用管理员身份执行命令后成功生成sshkey</p>
-<p>##问题四<br>将hexo内容部署到github时无法完整执行<br>###解决方法<br>在尝试更新git、使用SSH克隆和推送代码方法失败后，使用ping命令测试与指定主机的网络连接发现hosts文件可能存在被修改的问题，查找后发现hexo-blog文件夹下有两个hosts文件，其中一个hosts文件中有很多行127.0.0.1 github.com，使用管理员权限对改hosts文件编辑后运行hexo d成功。</p>
+<p>问题一<br>hexo初始化出错<br>解决方法<br>使用git bash 无法执行可能是权限问题，改用命令提示符执行hexo init hexo-blog</p>
+<p>问题二<br>hexo安装成功后但无法访问<br>解决方法<br>考虑到可能是端口被占用导致无妨访问，用命令hexo s -p 5000指定服务器运行在端口5000上</p>
+<p>问题三<br>生成sshkey时出错<br>解决方法<br>系统显示无法再指定路径下创建或保存密钥文件，因为该目录不存在，尝试过ssh-keygen命令重新运行、使用绝对路径ssh-keygen -t -c ‘github绑定邮箱’ -f &#x2F;路径.ssh&#x2F;custom_key等方法后仍然失败，可能是权限访问出来问题，使用管理员身份执行命令后成功生成sshkey</p>
+<p>问题四<br>将hexo内容部署到github时无法完整执行<br>解决方法<br>在尝试更新git、使用SSH克隆和推送代码方法失败后，使用ping命令测试与指定主机的网络连接发现hosts文件可能存在被修改的问题，查找后发现hexo-blog文件夹下有两个hosts文件，其中一个hosts文件中有很多行127.0.0.1 github.com，使用管理员权限对改hosts文件编辑后运行hexo d成功。</p>
 <p>date: 2025-06-27 22:43:08</p>
 
       
